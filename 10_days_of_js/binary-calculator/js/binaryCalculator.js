@@ -1,12 +1,12 @@
 /* Placing 0 */
-document.getElementById('btn0').addEventListener('click' ,function(){
+document.getElementById('btn0').onclick = function() {
     document.getElementById('res').insertAdjacentHTML('beforeend', '0');
-});
+};
 
 /* Placing 1 */
-document.getElementById('btn1').addEventListener('click' ,function(){
+document.getElementById('btn1').onclick = function() {
     document.getElementById('res').insertAdjacentHTML('beforeend', '1');
-});
+};
 
 /* Clear operation */
 document.getElementById('btnClr').onclick = function()
@@ -26,4 +26,7 @@ document.getElementById('btnMul').onclick = operator;
 document.getElementById('btnDiv').onclick = operator;
 document.getElementById('btnSub').onclick = operator;
 
-/** To be continued. */
+document.getElementById('btnEql').onclick = function () {
+    /** to convert text to float */
+    /** using switch operator  */
+}
