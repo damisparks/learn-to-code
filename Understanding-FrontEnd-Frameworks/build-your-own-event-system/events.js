@@ -22,7 +22,7 @@ EventTracker.prototype.notify = function(trackerObject, event){
 };
 
 // extend the `EventTracker` prototype to "trigger"
-EventTracker.prototype.trigger = function(events, someData){
+EventTracker.prototype.trigger = function(event, someData){
     var listOfCallbacks = this._events[event] || 0;
     var objectsToNotify = this._notify[event] || 0;
     var count;
@@ -35,6 +35,8 @@ EventTracker.prototype.trigger = function(events, someData){
         objectsToNotify[count].trigger(event, someData);
     }
 };
+
+
 
 
 
@@ -65,6 +67,6 @@ EventTracker.prototype.trigger = function(events, someData){
 // nephewParties.notify( richard, 'mainEvent' );
 //
 // nephewParties.trigger( 'mainEvent', 'ice cream' );
-//
+
 
 
