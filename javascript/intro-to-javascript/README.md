@@ -26,3 +26,9 @@
 
 * **Functions**
   To be honest :) think of `function` as something you keep somewhere to automate tasks or anything you want it to do for you. Supposing you want to create a `timer`, to remind you to go for your lunch at a certain everyday ? With a `function` you can achieve that.
+
+- **Array**
+  Array is a very important tool in programming languagues generally. `Array` empowers programmers with the ability of keeping something for later use. You can add to it , remove from it, call what is inside it doesn't matter the postion. example is `[1,2,3,4]`.
+
+* **Object**
+  You must have heard about **_Object Oriented Programming_**. If that is not the case for you then, no worries :) it will be covered in this section. Let me give you a tiny example of how it works. Suppose you want when you click on a switch, you want it to turn yellow and white otherwise. Think of it like the bulb, with `object` you can achieve. Basic info you need about `object` will be covered here.
