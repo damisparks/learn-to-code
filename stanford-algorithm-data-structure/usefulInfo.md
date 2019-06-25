@@ -49,3 +49,9 @@ def karatsuba(x,y):
 s = str(karatsuba(x,y))
 print (s)
 ```
+
+## Master theorem
+
+http://www.cse.unt.edu/~tarau/teaching/cf1/Master%20theorem.pdf
+
+https://math.stackexchange.com/questions/538268/can-you-help-me-to-solve-the-recurrence-relation-tn-t-sqrt-n-1

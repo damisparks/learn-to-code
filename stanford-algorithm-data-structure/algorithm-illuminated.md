@@ -21,7 +21,7 @@ This specialisation comprises of various courses listed below :
 
 ### TODO
 
-- [ ] Problem Set #2 (_Quiz_) due date is
-      **Jun 30**
+- [x] Problem Set #2 (_Quiz_) due date is
+      **Jun 30** (_Done_)
 - [ ] Programming Assignment #2 (_Quiz_) due is
       **Jun 30**
