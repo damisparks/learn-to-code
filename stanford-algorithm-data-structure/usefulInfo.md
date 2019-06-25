@@ -52,6 +52,6 @@ print (s)
 
 ## Master theorem
 
-http://www.cse.unt.edu/~tarau/teaching/cf1/Master%20theorem.pdf
+[Master theorem - _From University of North Texas_](http://www.cse.unt.edu/~tarau/teaching/cf1/Master%20theorem.pdf)
 
-https://math.stackexchange.com/questions/538268/can-you-help-me-to-solve-the-recurrence-relation-tn-t-sqrt-n-1
+[Stackexchange Master theorem](https://math.stackexchange.com/questions/538268/can-you-help-me-to-solve-the-recurrence-relation-tn-t-sqrt-n-1)
