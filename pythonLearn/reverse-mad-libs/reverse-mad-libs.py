@@ -1,4 +1,3 @@
-# Project was reviewed by Udacity 
 # Basics of the project is for Game to have 3 or more levels and each level contains 4 or more blanks to fill in.
 '''Beginning of the game : Immediately after running the program,
  user is prompted to select a difficulty level from easy / medium / hard
@@ -23,7 +22,7 @@ first_answer = ["lisbon", "city", "country", "union"]
 second_answer = ["online", "learning", "united", "valley"]
 third_answer = ["google", "search", "engine", "messenger"]
 
-# this function takes user input, printing it also run into the new function based on the input of the user 
+
 def get_difficult():
     """ 
     This function takes in the choice of the user and then picks up the quiz choice 
@@ -31,21 +30,21 @@ def get_difficult():
     """     
     difficulty = ["easy","medium","hard"]
     while True:
-        level = raw_input('Choose a difficulty: (easy / medium / hard)\n').lower()
+        level = input('Choose a difficulty: (easy / medium / hard)\n').lower()
         if level in difficulty:
-            print "You have chosen the \n" + level + " quiz chosen\n"
-            if level == "easy":
-                new_function(first_sentence,first_answer)
-            elif level == "medium":
-                new_function(second_sentence,second_answer)
+            print("You have chosen the \n" + level + " quiz chosen\n")
+            if level == difficulty[0]:
+                play_game(first_sentence,first_answer)
+            elif level == difficulty[1]:
+                play_game(second_sentence,second_answer)
             else:
-                new_function(third_sentence,third_answer)
+                play_game(third_sentence,third_answer)
             break
         else:
-            print "That is invalid"
+            print("That is invalid")
 
 # this function takes in the user sentence and answer from the first function and then loop through for the game play
-def new_function(question_level,response_level):
+def play_game(question_level,response_level):
     """ 
     This function helps with movement of the blanks to next one.
     For instance, during the while loop, there is an additon to the index and then the count 
@@ -57,23 +56,23 @@ def new_function(question_level,response_level):
     score = 9   # the inital score is 9, since we want the score to count downd when the user get the answer
     counting_score = 0  # the intial counting_score is 0
     while True:
-        print question_level + "\n"
-        answer = raw_input("What should be for this : __" + str(index + 1) + "__").lower()
+        print(question_level + "\n")
+        answer = input("What should be for this : __" + str(index + 1) + "__").lower()
         if answer in response_level:
             if answer in response_level[count]:
                 question_level = question_level.replace('__' + str(index + 1) + '__', answer)
                 index += 1
                 count += 1 
                 if index == length_of_quiz:
-                    print question_level + "\n"
-                    print "Congratulation!!!"
+                    print(question_level + "\n")
+                    print("Congratulation!!!")
                     break
         else:
-            print " Oops!!! Wrong Guess :) "
-            score -= 1  # decrement of score by 1
+            print(" Oops!!! Wrong Guess :) ")
+            score -= 1
             if score > counting_score:  
-                print 'The number of attempt left is : ', score
+                print('The number of attempt left is : ', score)
             if score == counting_score:
-                print 'You have no attempt left, Game over!!'
+                print('You have no attempt left, Game over!!')
                 break
 get_difficult()
