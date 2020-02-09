@@ -43,18 +43,14 @@ def get_difficult():
         else:
             print("That is invalid")
 
-# this function takes in the user sentence and answer from the first function and then loop through for the game play
+
 def play_game(question_level,response_level):
     """ 
     This function helps with movement of the blanks to next one.
     For instance, during the while loop, there is an additon to the index and then the count 
     making it possible for the blank to move and then other activities in the fuctions can work
     """
-    index = 0 
-    count = 0   # used to move from one answer to the next one and it is checking that the answer is checked for the beginning of the answer set. 
-    length_of_quiz = 4  # this is for the length of the quiz to avoid magic number 
-    score = 9   # the inital score is 9, since we want the score to count downd when the user get the answer
-    counting_score = 0  # the intial counting_score is 0
+    index, counting_score, count,length_of_quiz, score = 0, 0, 0, 4, 9
     while True:
         print(question_level + "\n")
         answer = input("What should be for this : __" + str(index + 1) + "__").lower()
