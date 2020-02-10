@@ -51,6 +51,7 @@ def play_game(question_level,response_level):
     making it possible for the blank to move and then other activities in the fuctions can work
     """
     index, counting_score, count,length_of_quiz, score = 0, 0, 0, 4, 9
+
     while True:
         print(question_level + "\n")
         answer = input("What should be for this : __" + str(index + 1) + "__").lower()
@@ -60,8 +61,7 @@ def play_game(question_level,response_level):
                 index += 1
                 count += 1 
                 if index == length_of_quiz:
-                    print(question_level + "\n")
-                    print("Congratulation!!!")
+                    print(question_level + "\n\033[1;32;40m Congratulation!!!")
                     break
         else:
             print(" Oops!!! Wrong Guess :) ")
