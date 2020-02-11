@@ -64,7 +64,7 @@ def play_game(question_level,response_level):
                     print(question_level + "\n\033[1;32;40m Congratulation!!!")
                     break
         else:
-            print(" Oops!!! Wrong Guess :) ")
+            print("Oops!!! Wrong Guess :) ")
             score -= 1
             if score > counting_score:  
                 print('The number of attempt left is : ', score)
