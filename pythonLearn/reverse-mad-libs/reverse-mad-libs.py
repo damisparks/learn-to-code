@@ -1,11 +1,4 @@
-# Basics of the project is for Game to have 3 or more levels and each level contains 4 or more blanks to fill in.
-'''Beginning of the game : Immediately after running the program,
- user is prompted to select a difficulty level from easy / medium / hard
- Once a level is selected, game displays a fill-in-the-blank and a prompt to fill in the first blank.
- Game Play:When player guesses correctly, 
- new prompt shows with correct answer in the previous blank and a new prompt for the next blank
- When player guesses incorrectly, they are prompted to try again
- '''
+
 # introducing the game to the user
 print("Damilibs Game, ready...")
 print("There are different levels in this game \nEasy! Medium!! Hard!!! \nChoose your level")
@@ -41,14 +34,12 @@ def get_difficult():
                 play_game(third_sentence,third_answer)
             break
         else:
-            print("That is invalid")
+            print("Invalid input :) \nPlease try again")
 
 
 def play_game(question_level,response_level):
     """ 
-    This function helps with movement of the blanks to next one.
-    For instance, during the while loop, there is an additon to the index and then the count 
-    making it possible for the blank to move and then other activities in the fuctions can work
+    Play the game based on the level chosen. 
     """
     index, counting_score, count,length_of_quiz, score = 0, 0, 0, 4, 9
 
