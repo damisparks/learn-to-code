@@ -1,6 +1,5 @@
 # Introduction to Programming
-This is an introductory article or learning path to the world of programming.
-
+Your goto resources for learning how to code.
 ## Content
 This project contains 
 - html
