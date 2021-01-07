@@ -1,0 +1,35 @@
+{
+  "name": "node_express",
+  "version": "1.0.0",
+  "description": "Simple web app built on node and express.",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=app nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint app.js"
+  },
+  "keywords": [],
+  "author": "Dami Sparks Omifare <omifaredammy@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "4.1.0",
+    "debug": "4.3.1",
+    "express": "4.17.1",
+    "morgan": "1.10.0",
+    "nodemon": "2.0.7"
+  },
+  "devDependencies": {
+    "eslint": "7.17.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": ["node_modules/**/node_modules"],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV" : "development",
+      "PORT": "4000"
+    }
+  }
+}
