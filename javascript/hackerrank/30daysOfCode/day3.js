@@ -1,3 +1,8 @@
+/**
+ * this was my solution : 
+ * Day 3: Intro to Conditional Statements
+ */
+
 function main() {
     const N = parseInt(readLine().trim(), 10);
     
